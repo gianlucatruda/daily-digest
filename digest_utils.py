@@ -39,16 +39,20 @@ def get_kindle_clips(token=TOKEN):
     print(req)
     return req.json()
 
+def cache_kindle_clips(clips, path='cache/clips.json'):
+    with open(path, 'w') as file:
+        json.dump(clips, file)
+
 
 if __name__ == "__main__":
 
     # Get latest data
     kindle_notes = get_kindle_clips()
-
+    cache_kindle_clips(kindle_notes)
     # Wikipedia random article? Tweets from my history?
 
     # Produce page
-    clips_to_html(kindle_notes)
+    clips_to_html(path='templates/index.html', clips=kindle_notes)
 
     # Restart server?
 
