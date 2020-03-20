@@ -24,3 +24,17 @@ div.kindle-clipping p {
     /* margin-right: auto; */
 
 }
+
+@media only screen and (max-device-width: 480px) {
+    div.kindle-clipping h1{
+        font-size: 18px;
+    }
+    div.kindle-clipping p {
+        color: #6d6d6d;
+        font-size: 16px;
+        width: 98%;
+        margin-left: auto;
+        /* margin-right: auto; */
+
+    }
+}
