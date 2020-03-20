@@ -3,6 +3,7 @@ secrets.*
 Pipfile.lock
 .vscode
 cache/
+id_rsa*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
