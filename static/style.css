@@ -3,9 +3,24 @@ body {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
 }
 
-p {
-    color: grey;
+div.kindle-clipping {
+    margin: 1rem;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    /* border: 1px solid black; */
+}
+
+div.kindle-clipping h1{
+    font-size: 1.4rem;
+}
+
+div.kindle-clipping p {
+    color: #6d6d6d;
+    font-size: 1.1rem;
+    width: 95%;
+    margin-left: auto;
+    /* margin-right: auto; */
+
 }

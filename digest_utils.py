@@ -13,7 +13,7 @@ def generate_options(clips) -> list:
         for pos in clips[book].keys():
             val = clips[book][pos]
             options.append(
-                f"<h2>{book}</h2>\n<b>{val['date']}</b>\n\n<p>{val['content']}</p>\n\n")
+                f"<div class='kindle-clipping'><h1>{book}</h1>\n\n<p>{val['content']}\n</p><p>\n[Clipped {val['date'].split(' ')[0]}]</p>\n\n</div>")
     return options
 
 
